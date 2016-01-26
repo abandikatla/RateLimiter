@@ -4,7 +4,7 @@ import org.apache.cxf.jaxrs.JAXRSServerFactoryBean;
 import org.apache.cxf.jaxrs.lifecycle.SingletonResourceProvider;
 public class Server {
 
-	 protected Server() throws Exception {
+	 public Server() throws Exception {
 	        JAXRSServerFactoryBean sf = new JAXRSServerFactoryBean();
 	        sf.setResourceClasses(APITest.class);
 	        sf.setResourceProvider(APITest.class, 
